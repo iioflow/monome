@@ -1,11 +1,19 @@
 serialosc.maxpat
 
-A specially modified version of serialosc.maxpat written by tehn. Replace the serialosc.maxpat file shipped with each monome application with this one. It lets Linux users assign static ports, so that they don't have to deal with the conflicting Bonjour service discovery stack.
+A specially modified version of serialosc.maxpat written by tehn. Replace the
+serialosc.maxpat file shipped with each monome application with this one. It
+lets Linux users assign static ports, so that they don't have to deal with the
+conflicting Bonjour service discovery stack.
 
-It needs to be edited to reflect your application and server port numbers, which you can find in ~/.config/serialosc/.
+It needs to be edited to reflect your application and server port numbers, which
+you can find in ~/.config/serialosc/.
 
-Replace all instances of #1 with your server port number (e.g. 15924) . Find the line ''udpsend localhost'' (line 92) and change the number to your server port number (e.g. 15924).
+Replace all instances of ''#1'' with your server port number (e.g. 15924). Find
+the line ''udpsend localhost'' (line 92) and change the number to your server
+port number (e.g. 15924).
 
-Next, find the line ''udpreceive'' (line 78) and change the number to your application port number (e.g. 9001).
+Next, find the line ''udpreceive'' (line 78) and change the number to your
+application port number (e.g. 9001).
 
-Copy this edited serialosc.maxpat into the folder for each Max application you want to run.
+Copy this edited serialosc.maxpat into the folder for each Max application you
+want to run.
